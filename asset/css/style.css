@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.root-button{
+    background-color: #C22A2B;
+    border-radius: 31px;
+    padding-inline: 38px;
+    padding-block: 15px;
+    color: #ffff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+/* ============== Header ============= */
+.header-wrapper {
+    
+    background-image: linear-gradient(rgb(0 0 0 / 5%), rgb(0 0 0 / 54%)), url(../images/bg-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-wrapper header .top-head {
+    border-bottom: 1px solid #ffffff38;
+}
+.header-wrapper header .welcome {
+	position: relative;
+}
+.header-wrapper header .welcome p{
+	color: #fff;
+	margin: 0!important;
+    font-family: inherit;
+    color: #b5b5b5;
+}
+.header-wrapper header .welcome::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/vec1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -10px;
+    left: -10px;
+    height: 21px;
+    width: 18px;
+}
+.header-wrapper header .social-links ul li a{
+    color: #525253;
+}
+.header-wrapper header .social-links ul li a:hover{
+    color: #fff;
+}
+/* ============== Bottom head ================= */
+
+.header-wrapper header .bottom-head .meu-bar h2{
+    color: #b5b5b5;
+    margin: 0 !important;
+    font-size: 16px;
+}
+.header-wrapper header .bottom-head .meu-bar img{
+    width: 44%;
+}
+.header-wrapper header .bottom-head nav ul{
+    gap: 30px;
+}
+.header-wrapper header .bottom-head nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #979798;
+    font-family: "Oswald", sans-serif;
+}
+.header-wrapper header .bottom-head nav ul li {
+    position: relative;
+}
+.header-wrapper header .bottom-head nav ul li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.8s;
+}
+.sub-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: 0.8s;
+    background-color: #eee;
+    padding-inline: 20px;
+    padding-block: 15px;
+    border-radius: 5px;
+    width: max-content;
+}
+.sub-menu .sub-menu-ul .sub-menu-li a{
+    color: #000000;
+    font-weight: 100;
+} 
+
+.header-wrapper header .bottom-head .book-table{
+    transition: 0.5s;
+}
+.header-wrapper header .bottom-head .book-table:hover {
+    transform : translateY(-3px);
+    position: relative;
+    transition: 0.2s;
+}
+
+
+/* ============== Banner ================= */
+.banner-wrapper{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgb( 0,0,0,0.5 )),  url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+.banner-wrapper h1{
+    font-size: 112px;
+    color: #fff;
+    font-weight: 700;
+}
+.banner-wrapper p {
+    font-size: 22px;
+    color: #e7e1e1;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    max-width: 631px;
+    margin-inline: auto;
+}
+.banner-wrapper .banner-button button:nth-child(1) {
+    background-color: #C29D7F;
+    border: none;
+    padding-inline: 38px;
+    padding-block: 15px;
+    border-radius: 31px;
+    color: #fff;
+}
+.banner-wrapper .banner-button button:nth-child(2) {
+    background-color: #2B2B2F;
+    border: none;
+    padding-inline: 38px;
+    padding-block: 15px;
+    border-radius: 31px;
+    color: #fff;
+}
+
+/* ============== About Section || Restfolio brand ================= */
+.about-section-wrapper {
+    background-image: linear-gradient(rgb(114 114 114 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 185px;
+    position: relative;
+    z-index: 1;
+}
+.about-section-wrapper::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/about_shaps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+.about-section-wrapper .about-hero-text h2 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    max-width: 527px;
+    margin-left: 200px;
+    margin-bottom: 85px;
+}
+.about-section-wrapper .images-sec img{
+    width: 100%;
+}
+.about-section-wrapper  .img2 img{
+    position: relative;
+    top: -308px;
+}
+.about-section-wrapper .text-sec span {
+    color: #a9a9a9b3;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    display: block;
+    margin-bottom: 34px;
+    font-weight: 600;
+    line-height: 29px;
+}
+.more-about-button{
+    transition: 0.8s;
+    cursor: pointer;
+}
+.more-about-button:hover .root-button{
+   
+
+    transform : translateY(-3px);
+    position: relative;
+    transition: 0.2s;
+}
+
+/* ============== Product Section ================= */
+.product-sec-wrapper {
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 105px;
+}
+.product-sec-wrapper .wrapper-food-bg {
+    background-image: linear-gradient(rgb(37 35 35 / 91%), rgb(43 40 40 / 87%)), url(../images/40275.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.product-sec-wrapper .card{
+    padding-block: 150px;
+}
+.product-sec-wrapper .card .title h2 {
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+}
+.product-sec-wrapper .card .text span{
+    color: #B1AFAF;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+}
+.product-sec-wrapper .card .see-more-btn a{
+    color: #fff;
+    border: 1px solid #929292;
+    padding-inline: 22px;
+    padding-block: 10px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.product-sec-wrapper .card:hover .see-more-btn a{
+    background-color: #D43C3C;
+    border: none;
+    transition: 0.5s;
+}
+.product-sec-wrapper .col-lg-3.col-md-4.col-sm-6.text-center {
+    -webkit-border-end: 1px solid #fff3;
+    border-inline-end: 1px solid #fff3;
+}
+.product-sec-wrapper .col-lg-3.col-md-4.col-sm-6.text-center:last-of-type{
+    border: 0;
+}
+
+/* ============== our Special Menu ================= */
+.menu-wrapper {
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 37px;
+    position: relative;
+}
+.menu-wrapper::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/menu_pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.menu-wrapper .menu-bg-block {
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 20px solid #333;
+    border-radius: 18px;
+    padding-inline: 29px;
+    padding-block: 25px;
+}
+.menu-wrapper .menu-heading {
+    max-width: 566px;
+    margin-inline: auto;
+}
+.menu-wrapper .menu-heading  h2{
+    color: #fff;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+.menu-wrapper .menu-heading  p {
+    color: #aeaeaebd;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+.menu-wrapper .menu-items{
+    position: relative;
+    padding: 30px 0;
+}
+.menu-wrapper .menu-items::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #fff4), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, #fff4 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px;
+    background-repeat: repeat-x;
+}
+.menu-wrapper .menu-items .food-items .food-img{
+    width: 85px;
+    height: 95px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.menu-wrapper .menu-items h3 {
+    color: #fff;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+}
+.menu-wrapper .menu-items .food-items .food-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-wrapper .menu-items .food-items .inf {
+    max-width: 316px;
+    margin: 0 61px 0 22px;
+}
+.menu-wrapper .menu-items .food-items .inf h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 23px;
+}
+.menu-wrapper .menu-items .food-items .inf span{
+    color: #ACACAD;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.menu-wrapper .menu-items .food-items .food-price .new-price {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+.menu-wrapper .menu-items .food-items .food-price .old-price {
+    color: #A8A8A9;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
+.menu-wrapper .menu-items .food-items .food-price  .discount h5 {
+    background-color: #C22A2B;
+    border-radius: 5px;
+    padding-inline: 21px;
+    padding-block: 8px;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* ============== Our Team Member ================= */
+.team-member-wrapper{
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 37px;
+    position: relative;
+}
+.team-member-wrapper h2{
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+.team-member-wrapper p {
+    font-size: 16px;
+    color: #BABABA;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 19px 0 65px 0;
+}
+.team-member-wrapper .chef-image {
+    overflow: hidden;
+    position: relative;
+}
+
+/* .team-member-wrapper .chef-image img::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: rgb(4,4,4);
+    background: linear-gradient(0deg, rgba(4,4,4,0.7904411764705882) 0%, rgba(255, 255, 255, 0.152) 0%);
+} */
+.team-member-wrapper .chef-image:hover .social-links{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.8s;
+}
+.team-member-wrapper .chef-image .social-links {
+    position: absolute;
+    top: 0;
+    background: linear-gradient( rgba(0,0,0,0.5), rgb(0,0,0,0.5) );
+    transform: translateY(50px);
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+    transition: 1s;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    z-index: 1;
+    padding-bottom: 10px;
+   
+}
+.team-member-wrapper .chef-image .social-links a{
+    color: #c3c3c3;
+    font-size: 18px;
+}
+.team-member-wrapper .chef-inf h3{
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.team-member-wrapper .chef-inf span{
+    color: #ADADAD;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+}
+.team-member-wrapper .view-all-button {
+    color: #fff;
+    border: 1px solid #fff;
+    width: max-content;
+    margin: 0 0 0 auto;
+    padding-inline: 45px;
+    padding-block: 13px;
+    border-radius: 39px;
+    margin-bottom: 65px;
+    transition: 0.8s;
+    overflow: hidden;
+}
+.team-member-wrapper .view-all-button:hover{
+    background-color: #CB3334;
+    transition: 0.8s;
+    border: none;
+    overflow: hidden;
+}
+/* ============== Video Blog ================= */
+.video-blog-wrapper {
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+    position: relative;
+}
+.video-blog-wrapper .video-blog{
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+.video-blog-wrapper .video-blog::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: rgb(0 0 0 / 47%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.video-blog-wrapper .video-blog .video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.video-blog-wrapper .video-blog  .vid{
+    border: 1px solid #eee;
+    border-radius: 100%;
+    width: 150px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* ============== Restaurant ================= */
+.restaurant-wrapper{
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+    position: relative;
+}
+.restaurant-wrapper .text {
+    max-width: 504px;
+}
+.restaurant-wrapper .text h2 {
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 28px;
+    padding-top: 34px;
+}
+.restaurant-wrapper .text span {
+    font-family: "Josefin Sans", sans-serif;
+    color: #B7B7B7;
+    margin: 0;
+    font-weight: 400;
+    line-height: 26px;
+}
+.restaurant-wrapper  p {
+    font-family: "Josefin Sans", sans-serif;
+    color: #dcd7d7;
+    margin: 0;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+
+/* ============== Make a Reservation ================= */
+.reservation-wrapper{
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+}
+.reservation-wrapper .reservation-bg {
+    padding-inline: 90px;
+    background-color: #1a1717;
+    padding-block: 150px;
+    position: relative;
+    border-radius: 15px;
+    z-index: 1;
+}
+.reservation-wrapper .title h2 {
+    color: #fff;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+.reservation-wrapper .title p{
+    color: #fff;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+.reservation-wrapper .form-control {
+    background-color: #19191A;
+    border: 1px solid #eeeeee38;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding-block: 13px;
+}
+.reservation-wrapper .form-control::placeholder{
+    color: #6E6E6F;
+}
+.reservation-wrapper .form-select{
+    background-color: #19191A;
+}
+.reservation-wrapper select.form-select {
+    color: #6E6E6F;
+    border: 1px solid #eeeeee38;
+    border-radius: 3px;
+    padding-block: 13px;
+    padding-inline-start: 12px;
+}
+.textture-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+/* ============== latest news ================= */
+.news-wrapper{
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+}
+.news-wrapper .post-card{
+    position: relative;
+
+}
+.news-wrapper .aug{
+    background-color: #19191A;
+    border-radius: 5px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    width: max-content;
+    color: #eee;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.news-wrapper .info{
+    position: relative;
+}
+.news-wrapper .info::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #fff4), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, #fff4 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px;
+    background-repeat: repeat-x;
+}
+.news-wrapper .info .admin {
+    color: #fff;
+}
+.news-wrapper .info .comment {
+    color: #fff;
+} 
+.news-wrapper .top-inf h2 {
+    color: #fff;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 26px;
+}
+/* ============== Gallery Sec ================= */
+
+.gellary-sec-wrapper{
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+
+}
+.gellary-sec-wrapper .gellary-img{
+    position: relative;
+}
+.gellary-sec-wrapper .gellary-img:hover .hover-page{
+    transform: scale(1);
+    transition: 0.8s;
+    opacity: 1;
+    visibility: visible;
+}
+.hover-page {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 67%);
+    font-size: 30px;
+    transform: scale(0);
+    transition: 0.8s;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+/* ============== Subscribe Now ================= */
+.subscribe-wrapper{
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+}
+.subscribe-wrapper .content {
+    padding-inline: 300px;
+    position: relative;
+    padding-block-end: 47px;
+}
+.subscribe-wrapper .content::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #fff4), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, #fff4 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px;
+    background-repeat: repeat-x;
+}
+.subscribe-wrapper .text{
+    max-width: 550px;
+    color: #A8A8A9;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 15px;
+}
+.subscribe-wrapper .form-control{
+    background-color: transparent;
+    border: 1px solid #4f4c4c;
+    border-radius: 30px;
+    padding-block: 15px;
+    position: relative;
+}
+.subscribe-wrapper .form-control::placeholder{
+    color: #2B2B2F;
+}
+.subscribe-wrapper button#button-addon2 {
+    background-color: #C22A2B;
+    border: none;
+    border-radius: 30px;
+    padding-inline: 56px;
+    position: absolute;
+    right: -30px;
+    height: 100%;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* ============== Footer ================= */
+.footer-wrapper {
+    background-image: linear-gradient(rgb(16 15 15 / 17%), rgb(0 0 0 / 31%)), url(../images/background-textture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 85px;
+}
+.footer-wrapper .row{
+    position: relative;
+}
+.footer-wrapper .row::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #fff4), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, #fff4 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px;
+    background-repeat: repeat-x;
+}
+.footer-wrapper .footer-title h2{
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+.footer-wrapper .footer-title ul li a{
+    color: #A5A5A6;
+    padding-bottom: 10px;
+}
+.footer-wrapper  span{
+    color: #A5A5A6;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+
+
+
+/* ================ Responsive ================= */
+@media only screen and (max-width : 1250px ){
+    .about-section-wrapper .about-hero-text h2{
+        margin-left: 0;
+    }
+    .about-section-wrapper .img2 img{
+        top: 0;
+    }
+    .about-section-wrapper .about-hero-text h2{
+        max-width: 62%;
+        text-align: center;
+        font-size: 48px;
+        margin-inline: auto;
+    }
+}
+@media only screen and (max-width : 1200px ){
+	.banner-wrapper h1 {
+        font-size: 64px !important;
+    }
+    .header-wrapper .header-wrapper{
+        gap: 10px !important;
+    }
+    .about-section-wrapper .about-hero-text h2 {
+        font-size: 48px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+}
+@media only screen and (max-width : 769px ){
+    .about-section-wrapper .img2 img{
+        top: 0;
+    }
+    .about-section-wrapper::after{
+        height: 26%;
+    }
+    .about-section-wrapper .about-hero-text h2{
+        margin-bottom: 50px;
+    }
+    .about-section-wrapper .about-hero-text h2 {
+        font-size: 35px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .about-section-wrapper{
+        padding-block: 60px;
+    }
+    .product-sec-wrapper {
+        padding-block: 45px;
+    }
+    .product-sec-wrapper .col-lg-3.col-md-4.col-sm-6.text-center {
+        -webkit-border-end: 1px solid #fff3;
+        border-inline-end: 1px solid #fff3 !important;
+        border-inline-start: 1px solid #fff3 !important;
+    }
+}
+@media only screen and (max-width : 659px ){
+    .subscribe-wrapper .content{
+        padding-inline: 0;
+    }
+    .subscribe-wrapper button#button-addon2 {
+        padding-inline: 32px;
+        right: -23px;
+    }
+    .gellary-sec-wrapper{
+        padding-block: 0;
+    }
+    .footer-wrapper{
+        padding-block: 0;
+    }
+    .root-button{
+        padding-block: 13px;
+    }
+
+}
+@media only screen and (max-width : 592px ){
+    subscribe-wrapper .input-group.mb-3{
+        width: 80%;
+        margin-inline: auto;
+    }
+    .reservation-wrapper{
+        padding-block: 0;
+    }
+    .reservation-wrapper .reservation-bg{
+        padding-inline: 0;
+    }
+    .header-wrapper .col-lg-4.col-md-12.col-sm-12 {
+        justify-content: center !important;
+    }
+    .header-wrapper ul{
+        padding-block: 15px;
+    }
+    .banner-wrapper h1 {
+        font-size: 32px !important;
+    }
+    .about-section-wrapper .col-lg-4.col-md-6.col-sm-12.offset-lg-1.my-sm-4{
+        margin-block: 20px;
+    }
+    .subscribe-wrapper .input-group {
+        width: 65%;
+        margin-inline: auto;
+    }
+    .subscribe-wrapper button#button-addon2 {
+        padding-inline: 21px;
+        right: -26px;
+    }
+    .gellary-sec-wrapper .col-lg-3.col-md-4.col-sm-6{
+        margin-bottom: 15px;
+    }
+    .reservation-wrapper .reservation-bg{
+        padding-block: 54px;
+    }
+    .textture-img {
+        position: absolute;
+        top: 0;
+        width: auto;
+        height: auto;
+        left: 0;
+        z-index: -1;
+    }
+    .restaurant-wrapper p {
+        margin: 0 !important;
+        padding-block: 21px;
+    }
+    .restaurant-wrapper .text h2{
+        font-size: 32px;
+    }
+    .video-blog-wrapper{
+        padding-block: 36px;
+    }
+    .team-member-wrapper .view-all-button {
+        margin: 0 0 45px 0;
+    }
+    .team-member-wrapper p {
+        margin: 19px 0 21px 0;
+    }
+    .team-member-wrapper h2 {
+        color: #fff;
+        font-size: 39px;
+        margin: 0;
+        font-family: "Oswald", sans-serif;
+    }
+    .menu-wrapper .menu-items .d-flex{
+        flex-direction: column !important;
+    }
+    .menu-wrapper .menu-items .food-items .inf{
+        margin: auto;
+        text-align: center;
+       
+    }
+    .menu-wrapper .menu-items .food-items .inf h3{
+        padding-bottom: 10px;
+    }
+    .food-price.text-end{
+        text-align: center !important;
+        
+    }
+    .product-sec-wrapper .card {
+        padding-block: 61px;
+    }
+    .root-button {
+        border-radius: 5px;
+    }
+    .header-wrapper header .welcome::after {
+        left: 67px;
+    }
+    .header-wrapper header .welcome{
+        text-align: center;
+    }
+    .banner-wrapper .banner-button button:nth-child(1) {
+        background-color: #C29D7F;
+        border: none;
+        padding-inline: 19px;
+        padding-block: 15px;
+        border-radius: 3px;
+        color: #fff;
+    }
+    .banner-wrapper .banner-button button:nth-child(2) {
+        background-color: #2B2B2F;
+        border: none;
+        padding-inline: 19px;
+        padding-block: 15px;
+        border-radius: 3px;
+        color: #fff;
+    }
+    .banner-wrapper p{
+        font-size: 16px;
+    }
+    .banner-wrapper {
+        height: 385px;
+    }
+}
+@media only screen and (max-width : 499px ){
+    .about-section-wrapper .about-hero-text h2 {
+        font-size: 27px;
+    }
+    .menu-wrapper .menu-heading  h2 {
+        font-size: 30px;
+    }
+    .subscribe-wrapper button#button-addon2 {
+        
+        font-size: 14px;
+    }
+    .subscribe-wrapper .input-group {
+        width: 82%;
+        margin-inline: auto;
+    }
+    .subscribe-wrapper input.form-control{
+        border-radius: 10pxpx;
+        width: 100%;
+    }
+    .subscribe-wrapper button#button-addon2{
+        position: inherit;
+    }
+    .subscribe-wrapper button#button-addon2{
+        width: 100% !important;
+        padding-block: 15px;
+        border-radius: 10px;
+        right: 0;
+        margin-top: 5px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
